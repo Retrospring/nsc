@@ -11,9 +11,21 @@ the great NPM package commitizen, but does not require any sort of configuration
 gem install nsc
 ```
 
+Now you can add your files, and then generate a commit using:
+
 ```bash
-nsc commit
+nsc c # OR
+nsc commit # OR JUST
+nsc
 ```
+
+If you're too lazy to add the files everytime, `nsc` can do that too! Just run:
+
+```bash
+nsc c -a # and all other variations
+```
+
+, and `nsc` will run `git add --all` before generating your commit! MAGIC!
 
 ## License
 
