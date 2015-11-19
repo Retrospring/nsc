@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = Nsc::VERSION
   spec.authors       = ['jh']
   spec.email         = ['jona@jona.io']
-  spec.summary       = %q{angular commits minus stuff}
+  spec.summary       = 'angular commits minus stuff'
   spec.homepage      = 'https://github.com/Retrospring/nsc'
   spec.license       = 'MIT'
 

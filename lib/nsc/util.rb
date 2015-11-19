@@ -1,3 +1,5 @@
+# rubocop:disable Metrics/LineLength
+
 require 'pastel'
 
 class Nsc
@@ -14,15 +16,15 @@ class Nsc
       pastel.bold('chore') + ': changes to the build process or auxiliary tools or libraries such as documentation generation'
     ]
 
-    SHORTTYPES = [
-      'feat',
-      'fix',
-      'docs',
-      'style',
-      'refactor',
-      'perf',
-      'test',
+    SHORTTYPES = %w(
+      'feat'
+      'fix'
+      'docs'
+      'style'
+      'refactor'
+      'perf'
+      'test'
       'chore'
-    ]
+    )
   end
 end

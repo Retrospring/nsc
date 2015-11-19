@@ -1,3 +1,5 @@
+# rubocop:disable Metrics/LineLength
+
 require 'nsc/version'
 require 'nsc/util'
 require 'inquirer'
@@ -18,7 +20,7 @@ class Nsc
   def construct_commit(type, msg, body)
     # somehow it breaks if you do it with template strings
     final_msg = "#{type}: #{msg}"
-    cmd = Cocaine::CommandLine.new("git", body.strip.empty? ? "commit -m '#{final_msg}'" : "commit -m '#{final_msg}' -m '#{body}'")
+    cmd = Cocaine::CommandLine.new('git', body.strip.empty? ? "commit -m '#{final_msg}'" : "commit -m '#{final_msg}' -m '#{body}'")
     cmd.run
   end
 end
