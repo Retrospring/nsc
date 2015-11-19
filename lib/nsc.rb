@@ -1,5 +1,7 @@
 require 'nsc/version'
 
-module Nsc
-  # Your code goes here...
+class Nsc
+  desc 'commit', 'commit with nsc'
+  def commit
+  end
 end
