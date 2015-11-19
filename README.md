@@ -2,9 +2,9 @@
 
 _nsc: (420) No Scope Commits_
 
-This is a small gem intended to help you commit in the Angular Commit style, but
+This is a small gem intended to help you commit in the [Angular Commit style](https://gist.github.com/brianclements/841ea7bffdb01346392c), but
 without the commit scope (since we think it's mostly useless). It's modeled after
-the great NPM package commitizen, but does not require any sort of configuration
+the great NPM package [commitizen](https://github.com/commitizen/cz-cli), but does not require any sort of configuration
 (since it's already really opinionated).
 
 ```bash
