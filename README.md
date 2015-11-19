@@ -1,4 +1,4 @@
-# Nsc
+# nsc
 
 _nsc: (420) No Scope Commits_
 
