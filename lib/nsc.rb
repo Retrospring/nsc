@@ -7,13 +7,18 @@ require 'cocaine'
 
 class Nsc
   desc 'commit', 'commit with nsc'
+  option :add, aliases: :a, type: :boolean
   def commit
     type = Nsc::Util::SHORTTYPES[Ask.list('Choose a type', Nsc::Util::TYPES)]
     msg = Ask.input 'Enter a commit message'
     body = Ask.input 'Enter an optional commit body'
 
+    Cocaine::CommandLine.new('git', 'add --all').run if options[:add]
     construct_commit type, msg, body
   end
+
+  map 'c' => 'commit', 'a' => 'commit -a'
+  default_task :commit
 
   private
 
